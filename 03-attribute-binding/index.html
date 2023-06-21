@@ -25,7 +25,7 @@
     </header>
     <main>
       <div id="app" class="inside">
-        <h1 id="">{{ headline }}</h1>
+        <h1 :id="headline.replace().toLowerCase()">{{ headline }}</h1>
         <p>
           Directives are special attributes with the <code>v-</code> prefix.
           Directive attribute values are expected to be
@@ -36,7 +36,7 @@
           we saw in the introduction:
         </p>
       </div>
-      <img v-bind="imgAttrs" />
+      <img />
     </main>
     <script src="https://unpkg.com/vue@next"></script>
     <script src="script.js"></script>

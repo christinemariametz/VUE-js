@@ -8,12 +8,12 @@ body {
 }
 
 h2 {
-  color: #6a1cc3;
+  color: #3f1074;
 }
 
 .header {
-  background-color: #6a1cc3;
-  color: #fff;
+  background-color: #dbbcfe;
+  color: #3f1074;
   margin-bottom: 20px;
 }
 
@@ -30,7 +30,7 @@ h2 {
 }
 
 .header__bootcamp-link {
-  background-color: #370b68;
+  background-color: #3f1074;
   color: #fff;
   text-decoration: none;
   display: none;
@@ -46,7 +46,7 @@ h1,
 h2,
 h3,
 h4 {
-  color: #6a1cc3;
+  color: #3f1074;
   margin-bottom: 15px;
 }
 

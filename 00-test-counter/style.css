@@ -1,0 +1,15 @@
+html {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+
+p {
+  font-size: 4rem;
+}
+
+button {
+  width: 20rem;
+  height: 15rem;
+  font-size: 3rem;
+  background-color: rgb(218, 130, 238);
+  border: none;
+}

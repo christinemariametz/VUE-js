@@ -39,7 +39,8 @@ h2 {
 }
 
 .inside {
-  margin: 10px;
+  display: flex;
+  flex-direction: column;
 }
 
 h1,
@@ -52,6 +53,10 @@ h4 {
 
 main p {
   line-height: 1.5;
+}
+
+img {
+  margin-top: 3rem;
 }
 
 @media only screen and (min-width: 1140px) {

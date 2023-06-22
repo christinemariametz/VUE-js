@@ -25,7 +25,8 @@
     </header>
     <main>
       <div id="app" class="inside">
-        <h1 :id="headline.replace().toLowerCase()">{{ headline }}</h1>
+        <!--use regex for replace Befehle! ( Leertaste , Bindestrich )-->
+        <h1 :id="headline.replace(/\s/g,'-').toLowerCase()">{{ headline }}</h1>
         <p>
           Directives are special attributes with the <code>v-</code> prefix.
           Directive attribute values are expected to be
@@ -35,8 +36,8 @@
           DOM when the value of its expression changes. Let's review the example
           we saw in the introduction:
         </p>
+        <img v-bind="imageAttrs" />
       </div>
-      <img />
     </main>
     <script src="https://unpkg.com/vue@next"></script>
     <script src="script.js"></script>

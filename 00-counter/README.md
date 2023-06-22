@@ -1,4 +1,4 @@
-Instanz v-on austesten
+Instanz v-on
 
 Usage of the v-on Inline Handlers
 The v-on directive helps you to add event listeners directly on the html element. Like any other directive, everything between the double quotes gets executed as an JavaScript expression. This means you can handle a data property instantly inline. This is also called "inline handlers".

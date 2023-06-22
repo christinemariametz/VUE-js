@@ -26,9 +26,15 @@
     <main>
       <div id="app" class="inside">
         <nav>
-          <button v-on:change="activeLetter" class="btn btn-a">A</button>
-          <button v-on:change="activeLetter" class="btn btn-b">B</button>
-          <button v-on:change="activeLetter" class="btn btn-c">C</button>
+          <button
+            v-on:click="activeLetter = 'A'"
+            class="btn btn-a"
+            :class="{'btn-active': activeLetter === 'A'}"
+          >
+            A
+          </button>
+          <button v-on:click="activeLetter = 'B'" class="btn btn-b">B</button>
+          <button v-on:click="activeLetter = 'C'" class="btn btn-c">C</button>
         </nav>
         <main>
           <div class="letter letter-a">A</div>

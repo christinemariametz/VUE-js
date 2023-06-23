@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Task - Attribute Binding</title>
+    <title>List Rendering</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -42,12 +42,12 @@
               v-for="{title, isnb, author, publisher, price, numPages} in books"
               :key="isbn"
             >
-              <td v-text="title"></td>
-              <td v-text="isbn"></td>
-              <td v-text="author"></td>
-              <td v-text="publisher"></td>
-              <td v-text="price"></td>
-              <td v-text="numPages"></td>
+              <td>{{ title }}</td>
+              <td>{{ isbn }}</td>
+              <td>{{ author }}</td>
+              <td>{{ publisher }}</td>
+              <td>{{ price }}</td>
+              <td>{{ numPages }}</td>
             </tr>
           </tbody>
         </table>

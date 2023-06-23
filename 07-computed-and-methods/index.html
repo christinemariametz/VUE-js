@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Attribute Binding</title>
+    <title>Computed and methods</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -25,18 +25,29 @@
     </header>
     <main>
       <div id="app" class="inside">
-        <!--use regex for replace Befehle! ( Leertaste , Bindestrich )-->
-        <h1 :id="headline.replace(/\s/g,'-').toLowerCase()">{{ headline }}</h1>
-        <p>
-          Directives are special attributes with the <code>v-</code> prefix.
-          Directive attribute values are expected to be
-          <strong>a single JavaScript expression</strong> (with the exception of
-          <code>v-for</code> and <code>v-on</code>, which will be discussed
-          later). A directive's job is to reactively apply side effects to the
-          DOM when the value of its expression changes. Let's review the example
-          we saw in the introduction:
-        </p>
-        <img v-bind="imageAttrs" />
+        <h1>20% off on all books from O'Reilly Media</h1>
+        <table>
+          <thead>
+            <tr>
+              <th v-for="columnName in Object.keys(books[0])" :key="columnName">
+                {{ columnName }}
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr
+              v-for="{ title, isbn, author, publisher, price, numPages } of books"
+              :key="isbn"
+            >
+              <td>{{ title }}</td>
+              <td>{{ isbn }}</td>
+              <td>{{ author }}</td>
+              <td>{{ publisher }}</td>
+              <td><span class="strike">{{ price }}</span></td>
+              <td>{{ numPages }}</td>
+            </tr>
+          </tbody>
+        </table>
       </div>
     </main>
     <script src="https://unpkg.com/vue@next"></script>

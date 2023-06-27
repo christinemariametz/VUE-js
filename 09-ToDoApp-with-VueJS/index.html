@@ -10,16 +10,13 @@
 
 
 <body>
-    <div class="container">
+    <div id="app" class="container">
         <header>
             <h1>ToDo App</h1>
         </header>
         <main>
             <div>
                 <label>All</label>
-                <!--
-                alle input/type=radio benötigen den gleichen "name" damit sie zusammenhängen. "checked" in einem input feld = der default ausgelöste radio button.
-                -->
                 <input type="radio" name="filter" id="radioInputAll" checked />
             </div>
             <div>
@@ -42,6 +39,8 @@
             </div>
         </div>
     </main>
+
+    <script src="https://unpkg.com/vue@next"></script>
     <script src="script.js"></script>
 </body>
 </html>

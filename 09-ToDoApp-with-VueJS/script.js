@@ -1,5 +1,26 @@
 "use strict";
 
+Vue.createApp({
+  data() {
+    return {
+      todos: [],
+    };
+  },
+  computed: {
+    addTodo() {},
+  },
+
+  created() {
+    fetch("http://localhost:4730/todos/1")
+      .then((response) => response.json())
+      .then((todosJsonData) => {
+        this.todos = todosJsonData;
+      });
+  },
+});
+mount("#app");
+
+/*
 // Welche Elemente müssen interaktiv sein?
 // ---> Variablen dafür bauen!
 const newToDoInput = document.getElementById("newToDoInput");
@@ -29,7 +50,7 @@ state = readStateFromLocalStorage();
 
 // ### Displaying Todos:
 // ----> Mock-up:
-/*let state = {
+let state = {
     "1686512042647": { 
         description: "Lern JavaScript",
         done: false
@@ -42,7 +63,7 @@ state = readStateFromLocalStorage();
         description: "Lern HTML", 
         done: false 
     },
-};*/
+};
 
 // State Management: ----> Visualisieren meiner Todos/ "Rendern"
 function renderTodos(filterForOpen = false, filterForDone = false) {
@@ -157,3 +178,4 @@ removeBtn.addEventListener("click", () => {
   // state updaten:
   renderTodos();
 });
+*/

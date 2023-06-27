@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Computed and methods</title>
+    <title>Computed and Methods</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -29,14 +29,14 @@
         <table>
           <thead>
             <tr>
-              <th v-for="columnName in Object.keys(books[0])" :key="columnName">
+              <th v-for="columnName in columnHeading" :key="columnName">
                 {{ columnName }}
               </th>
             </tr>
           </thead>
           <tbody>
             <tr
-              v-for="{ title, isbn, author, publisher, price, numPages } of books"
+              v-for="{ title, isbn, author, publisher, price, numPages } of oReillyBooks"
               :key="isbn"
             >
               <td>{{ title }}</td>

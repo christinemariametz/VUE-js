@@ -1,0 +1,39 @@
+{
+  "todos": [
+    {
+      "id": 1,
+      "description": "Learn HTML",
+      "done": true
+    },
+    {
+      "id": 2,
+      "description": "Learn CSS",
+      "done": true
+    },
+    {
+      "id": 3,
+      "description": "Learn JS",
+      "done": true
+    },
+    {
+      "description": "Kochen und essen",
+      "done": false,
+      "id": 4
+    },
+    {
+      "description": "Lesen",
+      "done": false,
+      "id": 5
+    },
+    {
+      "description": "backen",
+      "done": false,
+      "id": 6
+    },
+    {
+      "description": "spielen",
+      "done": false,
+      "id": 7
+    }
+  ]
+}
